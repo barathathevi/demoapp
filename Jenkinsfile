@@ -7,6 +7,12 @@ pipeline {
                 	sh "mvn compile"          	 
             	}     	 
         	}     	 
+    	stage("Test") {          	 
+		agent { node { label 'slave1' } }
+            	steps {               	 
+                	sh "mvn test"          	 
+            	}     	 
+        	}     	 
 	}
 }
 
