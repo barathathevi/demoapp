@@ -8,7 +8,7 @@ pipeline {
             	}     	 
         	}     	 
     	stage("Test") {          	 
-		agent { node { label 'slave1' } }
+		agent { node { label 'slave2' } }
             	steps {               	 
                 	sh "mvn test"          	 
             	}     	 
