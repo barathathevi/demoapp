@@ -6,5 +6,6 @@ pipeline {
                 	sh "mvn compile"          	 
             	}     	 
         	}     	 
+	}
 }
 
